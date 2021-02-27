@@ -935,8 +935,7 @@ class Buildozer:
 
             if not meth.__doc__:
                 continue
-            doc = [x for x in
-                    meth.__doc__.strip().splitlines()][0].strip()
+            doc = list(meth.__doc__.strip().splitlines())[0].strip()
             print('  {0:<18} {1}'.format(name, doc))
 
         print('')
