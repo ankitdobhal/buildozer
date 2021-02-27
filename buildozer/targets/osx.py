@@ -76,8 +76,6 @@ class TargetOSX(Target):
         else:
             self.download_kivy(kivy_app_dir, py_branch)
 
-        return
-
     def check_requirements(self):
         self.ensure_sdk()
         self.ensure_kivyapp()
