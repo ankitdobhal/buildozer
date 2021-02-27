@@ -253,7 +253,7 @@ class Buildozer:
 
     def cmd(self, command, **kwargs):
         # prepare the environ, based on the system + our own env
-        env = copy(environ)
+        env = environ.copy()
         env.update(self.environ)
 
         # prepare the process
@@ -360,7 +360,7 @@ class Buildozer:
         from pexpect import spawnu
 
         # prepare the environ, based on the system + our own env
-        env = copy(environ)
+        env = environ.copy()
         env.update(self.environ)
 
         # prepare the process
